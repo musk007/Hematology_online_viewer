@@ -86,8 +86,8 @@ with right:
         pd.DataFrame([row]).to_csv(
             "feedback.csv",
             mode="a",
-            header=not os.path.exists("feedback.csv"),
+            header=not os.path.exists(f"{group_name}.csv"),
             index=False
         )
-        st.write(os.path.abspath("feedback.csv"))
+        st.write(os.path.abspath(f"{group_name}.csv"))
         st.success("Feedback submitted.")
