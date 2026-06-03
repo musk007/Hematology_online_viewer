@@ -1,0 +1,131 @@
+{
+    "Patient 1": {
+      "images": [ "images/1_11_114_400_ALL.png",
+                "images/1_15_110_400_ALL.png",
+                "images/1_16_111_400_ALL.png",
+                "images/1_5_7_400_ALL.png"],
+      "text": "report for pateint 1",
+      "info": {
+        "Diagnosis": "ALL",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 4": {
+      "images": [ "images/12_1_1_400_AML.png",
+                "images/12_2_2_400_AML.png",
+                "images/12_3_2_400_AML.png",
+                "images/12_4_3_400_AML.png"
+      ],
+      "text": "Text for Group 1.",
+      "info": {
+        "Diagnosis": "ALL",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 12": {
+      "images": ["12_11_7_400_AML.png",
+                "12_12_8_400_AML.png",
+                "12_13_68_400_AML.png",
+                "12_14_68_400_AML.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "AML",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 15": {
+      "images": ["images/24_1_1_400_APML.png",
+                "images/24_2_91_400_APML.png",     
+                "images/24_3_3_400_APML.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "AML",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 21": {
+      "images": ["21_10_65_400_CLL.png",
+      "21_11_12_400_CLL.png",
+      "21_12_66_400_CLL.png",
+      "21_13_77_400_CLL.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "CLL",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 23": {
+      "images": ["23_10_13_400_APML.png",
+      "23_11_14_400_APML.png",
+      "23_12_15_400_APML.png",
+      "23_13_21_400_APML.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "APML",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 24": {
+      "images": ["24_10_12_400_APML.png",
+      "24_11_13_400_APML.png",
+      "24_12_16_400_APML.png",
+      "24_13_16_400_APML.png",
+      "24_14_18_400_APML.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "APML",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 27": {
+      "images": ["27_10_10_400_CML.png",
+      "27_11_11_400_CML.png",
+      "27_12_12_400_CML.png",
+      "27_13_13_400_CML.png",
+      "27_14_14_400_CML.png",
+      "27_15_15_400_CML.png",
+      "27_16_16_400_CML.png",
+      "27_17_17_400_CML.png",
+      "27_18_18_400_CML.png",
+      "27_19_19_400_CML.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "CML",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 28": {
+      "images": ["28_10_97_400_CML.png",
+      "28_11_104_400_CML.png",
+      "28_12_16_400_CML.png",
+      "28_13_98_400_CML.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "CML",
+        "Magnification": "40X"
+      }
+    },
+    "Patient 32": {
+      "images": ["32_10_10_400_CLL.png",
+      "32_11_60_400_CLL.png",
+      "32_12_14_400_CLL.png",
+      "32_13_15_400_CLL.png",
+      "32_14_16_400_CLL.png",
+      "32_15_17_400_CLL.png",
+      "32_16_68_400_CLL.png",
+      "32_17_19_400_CLL.png"
+      ],
+      "text": "Text for Group 2.",
+      "info": {
+        "Diagnosis": "CLL",
+        "Magnification": "40X"
+      }
+    }
+  }
