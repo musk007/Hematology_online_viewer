@@ -102,7 +102,7 @@ with left:
 # -------------------------
 with right:
 
-    st.subheader("Description")
+    st.subheader("Report")
     st.markdown(group["text"])
 
     st.subheader("Information")
