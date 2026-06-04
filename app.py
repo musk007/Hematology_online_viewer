@@ -96,6 +96,8 @@ with right:
 
     st.subheader("Feedback")
 
+    reviewer = st.text_input("Reviewer name")
+
     feedback = st.text_area(
         "Enter your feedback",
         height=200
@@ -103,15 +105,17 @@ with right:
 
     if st.button("Submit Feedback"):
         row = {
+            "timestamp": str(datetime.now()),
             "group": group_name,
-            "feedback": feedback,
-            "timestamp": str(datetime.now())
+            "reviewer": reviewer,
+            "feedback": feedback
         }
 
         worksheet.append_row([
-            str(datetime.now()),
-            group_name,
-            feedback
+            row["timestamp"],
+            row["group"],
+            row["reviewer"],
+            row["feedback"]
         ])
 
         st.success("Feedback submitted.")
