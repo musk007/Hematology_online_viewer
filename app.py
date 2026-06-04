@@ -104,18 +104,26 @@ with right:
     )
 
     if st.button("Submit Feedback"):
-        row = {
-            "timestamp": str(datetime.now()),
-            "group": group_name,
-            "reviewer": reviewer,
-            "feedback": feedback
-        }
 
-        worksheet.append_row([
-            row["timestamp"],
-            row["group"],
-            row["reviewer"],
-            row["feedback"]
-        ])
+        if feedback.strip() == "":
+            st.warning("Please enter feedback before submitting.")
 
-        st.success("Feedback submitted.")
+        elif reviewer.strip() == "":
+            st.warning("Please enter reviewer name before submitting.")
+
+        else:
+            row = {
+                "timestamp": str(datetime.now()),
+                "group": group_name,
+                "reviewer": reviewer,
+                "feedback": feedback
+            }
+
+            worksheet.append_row([
+                row["timestamp"],
+                row["group"],
+                row["reviewer"],
+                row["feedback"]
+            ])
+
+            st.success(f"Feedback submitted for {group_name}.")
