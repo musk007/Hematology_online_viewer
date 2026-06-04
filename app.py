@@ -177,5 +177,4 @@ with right:
             ])
 
             st.success(f"Feedback submitted for {group_name}.")
-            st.session_state.feedback_text = ""
-            st.rerun()
+            
