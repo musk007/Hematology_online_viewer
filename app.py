@@ -102,10 +102,9 @@ with left:
 # -------------------------
 with right:
 
-    st.subheader("Report")
-    st.markdown(group["text"])
+    
 
-    st.subheader("Information")
+    # st.subheader("Information")
     info = group["info"]
 
     st.subheader("Summary")
@@ -137,6 +136,9 @@ with right:
 
     with st.expander("QC"):
         st.json(info["report_ready"]["qc"])
+
+    st.subheader("Report")
+    st.markdown(group["text"])
 
     st.subheader("Feedback")
 
