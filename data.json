@@ -21,11 +21,182 @@
         "images/1_42_52_400_ALL.png",
         "images/1_5_7_400_ALL.png",
         "images/1_55_66_400_ALL.png"],
-      "text": "report for pateint 1",
+      "text": "**Specimen:** Peripheral blood smear, 33 fields of view, 140 of 150 annotated objects classified as informative WBCs (10 artefacts excluded).\n**Differential (clinical denominator):**\n| Cell type | % of informative WBCs |\n|---|---|\n| Lymphoblasts | 92.9% |\n| Lymphocytes | 6.4% |\n| Monocytes | 0.7% |\n**Cohort morphology (n = 130 lymphoblasts):** predominantly medium cells (76.2%) with abundant (80.8%), slightly basophilic (100.0%) cytoplasm and absent cytoplasmic vacuolation (100.0%); nuclei show coarse chromatin (90.8%), regular contours (59.2%), and inconspicuous nucleoli (74.6%).\n**Morphologic interpretation:** The lymphoblast cohort shows coarse chromatin with mostly inconspicuous nucleoli, but no specific FAB subtype is favored. Regular nuclear contours are dominant at 59.23%, which is borderline and indicates a clinically meaningful non-regular nuclear component rather than a uniform L1-like pattern. Medium cell size and abundant slightly basophilic cytoplasm are not classic for FAB L1, while inconspicuous nucleoli and absent cytoplasmic vacuolation argue against typical FAB L2/L3 morphology.\n**Diagnostic flags:** blasts present; blast threshold met.\n**Impression:** Acute Lymphoblastic Leukemia (ALL).\nLymphoblasts comprise 92.9% of WBCs, exceeding the 20% blast threshold for acute leukemia.\n**Differential considerations:**\n- B-lymphoblastic leukemia/lymphoma (most common in adults and children).\n- T-lymphoblastic leukemia/lymphoma.\n- Mixed-phenotype acute leukemia (excluded by immunophenotyping).\n**Recommended workup:**\n- Flow cytometric immunophenotyping for lineage assignment (B-ALL: CD19, CD22, CD79a, CD10, TdT; T-ALL: cytoCD3, CD7, TdT).\n- Bone marrow aspirate and trephine biopsy.\n- Cytogenetics and FISH for recurrent ALL abnormalities (BCR::ABL1, KMT2A rearrangements, ETV6::RUNX1, TCF3::PBX1, hypodiploidy).\n- Molecular studies including BCR::ABL1-like signature where available.\n- CSF examination to assess CNS involvement.\n**QC:** 33 FOVs; 140/150 cells classifiable (6.7% artefact); cohort cell count = 130; global canvas stitching active.",
       "info": {
-        "Diagnosis": "ALL",
-        "Magnification": "40X"
-      }
+        "metadata_filename_diagnosis": "ALL",
+        "n_images": 33,
+        "n_cells_total": 150,
+        "n_cells_identified_wbc": 140,
+        "cell_counts": {
+          "lymphoblast": 130,
+          "none": 10,
+          "lymphocyte": 9,
+          "monocyte": 1
+        },
+        "cell_percentages_all": {
+          "lymphoblast": 86.67,
+          "none": 6.67,
+          "lymphocyte": 6.0,
+          "monocyte": 0.67
+        },
+        "cell_percentages_clinical": {
+          "lymphoblast": 92.86,
+          "lymphocyte": 6.43,
+          "monocyte": 0.71
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 104,
+              "small": 35,
+              "large": 11
+            },
+            "n_informative_cells": 150,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 69.33,
+              "small": 23.33,
+              "large": 7.33
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "coarse": 128,
+              "open": 12,
+              "code_2": 10
+            },
+            "n_informative_cells": 150,
+            "n_na_cells": 0,
+            "percentages": {
+              "coarse": 85.33,
+              "open": 8.0,
+              "code_2": 6.67
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "regular": 84,
+              "irregular": 56,
+              "cleaved_or_folded": 10
+            },
+            "n_informative_cells": 150,
+            "n_na_cells": 0,
+            "percentages": {
+              "regular": 56.0,
+              "irregular": 37.33,
+              "cleaved_or_folded": 6.67
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "inconspicuous": 107,
+              "prominent": 33,
+              "code_2": 10
+            },
+            "n_informative_cells": 150,
+            "n_na_cells": 0,
+            "percentages": {
+              "inconspicuous": 71.33,
+              "prominent": 22.0,
+              "code_2": 6.67
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 114,
+              "scanty": 26,
+              "code_2": 10
+            },
+            "n_informative_cells": 150,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 76.0,
+              "scanty": 17.33,
+              "code_2": 6.67
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "slight": 140,
+              "code_2": 10
+            },
+            "n_informative_cells": 150,
+            "n_na_cells": 0,
+            "percentages": {
+              "slight": 93.33,
+              "code_2": 6.67
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 140,
+              "code_2": 10
+            },
+            "n_informative_cells": 150,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 93.33,
+              "code_2": 6.67
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "ALL",
+          "blast_pool_percentage_of_wbc": 92.86,
+          "dominant_cell_type": "lymphoblast",
+          "dominant_cell_pct": 92.86,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": true,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 76.15
+            },
+            "nuclear_chromatio": {
+              "dominant": "coarse",
+              "dominance_pct": 90.77
+            },
+            "nuclear_shape": {
+              "dominant": "regular",
+              "dominance_pct": 59.23
+            },
+            "nucleolus": {
+              "dominant": "inconspicuous",
+              "dominance_pct": 74.62
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 80.77
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "slight",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 150,
+            "n_identified_wbc": 140,
+            "n_artifacts": 10,
+            "n_fields_of_view": 33,
+            "n_cells_in_cohort": 130,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
+      }   
     },
     "Patient 4": {
       "images": [ 
@@ -50,10 +221,192 @@
         "images/4_42_117_400_ALL.png",
         "images/4_8_153_400_ALL.png"
       ],
-      "text": "Text for Group 1.",
+      "text": "**Specimen:** Peripheral blood smear, 52 fields of view, 96 of 147 annotated objects classified as informative WBCs (51 artefacts excluded).\n\n**Differential (clinical denominator):**\n| Cell type | % of informative WBCs |\n|---|---|\n| Lymphoblasts | 41.7% |\n| Neutrophils | 38.5% |\n| Lymphocytes | 7.3% |\n| Myelocytes | 6.2% |\n| Eosinophils | 5.2% |\n| Monocytes | 1.0% |\n\n**Cohort morphology (n = 40 lymphoblasts):** predominantly medium cells (60.0%) with scanty (97.5%), slightly basophilic (100.0%) cytoplasm and absent cytoplasmic vacuolation (100.0%); nuclei show coarse chromatin (97.5%), irregular contours (70.0%), and inconspicuous nucleoli (100.0%).\n\n**Morphologic interpretation:** The lymphoblast cohort shows a mixed FAB pattern, and no specific FAB subtype is favored. Scanty cytoplasm with inconspicuous nucleoli is compatible with L1-type morphology, but the borderline medium-cell predominance at 60.0% and irregular nuclear contours at 70.0% introduce L2-like features. Slight basophilia and absent cytoplasmic vacuolation argue against L3 morphology.\n\n**Diagnostic flags:** blasts present; blast threshold met; eosinophilia present.\n\n**Impression:** Acute Lymphoblastic Leukemia (ALL).\n\nLymphoblasts comprise 41.7% of WBCs, exceeding the 20% blast threshold for acute leukemia.\n\n**Differential considerations:**\n- B-lymphoblastic leukemia/lymphoma (most common in adults and children).\n- T-lymphoblastic leukemia/lymphoma.\n- Mixed-phenotype acute leukemia (excluded by immunophenotyping).\n\n**Recommended workup:**\n- Flow cytometric immunophenotyping for lineage assignment (B-ALL: CD19, CD22, CD79a, CD10, TdT; T-ALL: cytoCD3, CD7, TdT).\n- Bone marrow aspirate and trephine biopsy.\n- Cytogenetics and FISH for recurrent ALL abnormalities (BCR::ABL1, KMT2A rearrangements, ETV6::RUNX1, TCF3::PBX1, hypodiploidy).\n- Molecular studies including BCR::ABL1-like signature where available.\n- CSF examination to assess CNS involvement.\n\n**QC:** 52 FOVs; 96/147 cells classifiable (34.7% artefact); cohort cell count = 40; global canvas stitching active.",
       "info": {
-        "Diagnosis": "ALL",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "ALL",
+        "n_images": 52,
+        "n_cells_total": 147,
+        "n_cells_identified_wbc": 96,
+        "cell_counts": {
+          "none": 51,
+          "lymphoblast": 40,
+          "neutrophil": 37,
+          "lymphocyte": 7,
+          "myelocyte": 6,
+          "eosinophil": 5,
+          "monocyte": 1
+        },
+        "cell_percentages_all": {
+          "none": 34.69,
+          "lymphoblast": 27.21,
+          "neutrophil": 25.17,
+          "lymphocyte": 4.76,
+          "myelocyte": 4.08,
+          "eosinophil": 3.4,
+          "monocyte": 0.68
+        },
+        "cell_percentages_clinical": {
+          "lymphoblast": 41.67,
+          "neutrophil": 38.54,
+          "lymphocyte": 7.29,
+          "myelocyte": 6.25,
+          "eosinophil": 5.21,
+          "monocyte": 1.04
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 74,
+              "large": 51,
+              "small": 22
+            },
+            "n_informative_cells": 147,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 50.34,
+              "large": 34.69,
+              "small": 14.97
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "coarse": 96,
+              "code_2": 50,
+              "open": 1
+            },
+            "n_informative_cells": 147,
+            "n_na_cells": 0,
+            "percentages": {
+              "coarse": 65.31,
+              "code_2": 34.01,
+              "open": 0.68
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 80,
+              "cleaved_or_folded": 50,
+              "regular": 17
+            },
+            "n_informative_cells": 147,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 54.42,
+              "cleaved_or_folded": 34.01,
+              "regular": 11.56
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "inconspicuous": 97,
+              "code_2": 50
+            },
+            "n_informative_cells": 147,
+            "n_na_cells": 0,
+            "percentages": {
+              "inconspicuous": 65.99,
+              "code_2": 34.01
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 54,
+              "code_2": 50,
+              "scanty": 43
+            },
+            "n_informative_cells": 147,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 36.73,
+              "code_2": 34.01,
+              "scanty": 29.25
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "slight": 87,
+              "code_2": 50,
+              "moderate": 10
+            },
+            "n_informative_cells": 147,
+            "n_na_cells": 0,
+            "percentages": {
+              "slight": 59.18,
+              "code_2": 34.01,
+              "moderate": 6.8
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 96,
+              "code_2": 50,
+              "prominent": 1
+            },
+            "n_informative_cells": 147,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 65.31,
+              "code_2": 34.01,
+              "prominent": 0.68
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "ALL",
+          "blast_pool_percentage_of_wbc": 41.67,
+          "dominant_cell_type": "lymphoblast",
+          "dominant_cell_pct": 41.67,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": true,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": false,
+            "eosinophilia_present": true,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 60.0
+            },
+            "nuclear_chromatio": {
+              "dominant": "coarse",
+              "dominance_pct": 97.5
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 70.0
+            },
+            "nucleolus": {
+              "dominant": "inconspicuous",
+              "dominance_pct": 100.0
+            },
+            "cytoplasm": {
+              "dominant": "scanty",
+              "dominance_pct": 97.5
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "slight",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 147,
+            "n_identified_wbc": 96,
+            "n_artifacts": 51,
+            "n_fields_of_view": 52,
+            "n_cells_in_cohort": 40,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 12": {
@@ -79,10 +432,191 @@
         "images/12_5_4_400_AML.png",       
         "images/12_9_6_400_AML.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 88 fields of view, 371 of 413 annotated objects classified as informative WBCs (42 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Monoblasts | 91.6% |\n| Lymphocytes | 7.5% |\n| Monocytes | 0.3% |\n| Eosinophils | 0.3% |\n| Myeloblasts | 0.3% |\n\n**Cohort morphology (n = 340 monoblasts):** predominantly medium cells (95.3%) with abundant (100.0%), moderately basophilic (100.0%) cytoplasm and absent cytoplasmic vacuolation (100.0%); nuclei show open chromatin (100.0%), irregular contours (100.0%), and prominent nucleoli (100.0%).\n\n**Morphologic interpretation:** The blast population favours FAB AML-M5, specifically an acute monoblastic pattern, based on the monoblast predominance with open chromatin, irregular nuclear contours, prominent nucleoli, and abundant moderately basophilic cytoplasm. The highly uniform monoblastic morphology argues against a mixed myelomonocytic pattern on morphologic grounds. Absent cytoplasmic vacuolation and the cohesive pattern of monocytic blast features do not support a lymphoblastic morphology.\n\n**Diagnostic flags:** blasts present; blast threshold met.\n\n**Impression:** Acute Myeloid Leukemia with monocytic differentiation (AML-M5 / acute monoblastic or monocytic leukemia, suspected).\n\nMonoblasts comprise 91.9% of WBCs with prominent nucleoli and abundant moderately basophilic cytoplasm, consistent with a monocytic-lineage acute leukemia.\n\n**Differential considerations:**\n- Acute myelomonocytic leukemia (AML-M4).\n- AML with KMT2A rearrangement (frequently monocytic).\n- Blastic plasmacytoid dendritic cell neoplasm (excluded by immunophenotyping).\n\n**Recommended workup:**\n- Flow cytometric immunophenotyping (CD33, CD64, CD11b, CD14, lysozyme; CD34 often negative in monoblastic AML).\n- Cytochemistry: non-specific esterase (NSE) positive, MPO often weak/negative.\n- Bone marrow aspirate and trephine biopsy.\n- Cytogenetics and FISH including KMT2A (11q23) rearrangements.\n- Molecular panel including NPM1, FLT3-ITD/TKD, and AML fusion screen.\n\n**QC:** 88 FOVs; 371/413 cells classifiable (10.2% artefact); cohort cell count = 340; global canvas stitching active.",
       "info": {
-        "Diagnosis": "AML",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "AML",
+        "n_images": 88,
+        "n_cells_total": 413,
+        "n_cells_identified_wbc": 371,
+        "cell_counts": {
+          "monoblast": 340,
+          "none": 42,
+          "lymphocyte": 28,
+          "monocyte": 1,
+          "eosinophil": 1,
+          "myeloblast": 1
+        },
+        "cell_percentages_all": {
+          "monoblast": 82.32,
+          "none": 10.17,
+          "lymphocyte": 6.78,
+          "monocyte": 0.24,
+          "eosinophil": 0.24,
+          "myeloblast": 0.24
+        },
+        "cell_percentages_clinical": {
+          "monoblast": 91.64,
+          "lymphocyte": 7.55,
+          "monocyte": 0.27,
+          "eosinophil": 0.27,
+          "myeloblast": 0.27
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 327,
+              "large": 48,
+              "small": 37,
+              "code_3": 1
+            },
+            "n_informative_cells": 413,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 79.18,
+              "large": 11.62,
+              "small": 8.96,
+              "code_3": 0.24
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "open": 341,
+              "code_2": 42,
+              "coarse": 30
+            },
+            "n_informative_cells": 413,
+            "n_na_cells": 0,
+            "percentages": {
+              "open": 82.57,
+              "code_2": 10.17,
+              "coarse": 7.26
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 343,
+              "cleaved_or_folded": 42,
+              "regular": 28
+            },
+            "n_informative_cells": 413,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 83.05,
+              "cleaved_or_folded": 10.17,
+              "regular": 6.78
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "prominent": 341,
+              "code_2": 42,
+              "inconspicuous": 30
+            },
+            "n_informative_cells": 413,
+            "n_na_cells": 0,
+            "percentages": {
+              "prominent": 82.57,
+              "code_2": 10.17,
+              "inconspicuous": 7.26
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 343,
+              "code_2": 42,
+              "scanty": 28
+            },
+            "n_informative_cells": 413,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 83.05,
+              "code_2": 10.17,
+              "scanty": 6.78
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "moderate": 343,
+              "code_2": 42,
+              "slight": 28
+            },
+            "n_informative_cells": 413,
+            "n_na_cells": 0,
+            "percentages": {
+              "moderate": 83.05,
+              "code_2": 10.17,
+              "slight": 6.78
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 371,
+              "code_2": 42
+            },
+            "n_informative_cells": 413,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 89.83,
+              "code_2": 10.17
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "AML",
+          "blast_pool_percentage_of_wbc": 91.91,
+          "dominant_cell_type": "monoblast",
+          "dominant_cell_pct": 91.64,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": true,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 95.29
+            },
+            "nuclear_chromatio": {
+              "dominant": "open",
+              "dominance_pct": 100.0
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 100.0
+            },
+            "nucleolus": {
+              "dominant": "prominent",
+              "dominance_pct": 100.0
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "moderate",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 413,
+            "n_identified_wbc": 371,
+            "n_artifacts": 42,
+            "n_fields_of_view": 88,
+            "n_cells_in_cohort": 340,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 15": {
@@ -108,10 +642,191 @@
         "images/15_5_6_400_AML.png",       
         "images/15_9_11_400_AML.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 59 fields of view, 137 of 164 annotated objects classified as informative WBCs (27 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Monoblasts | 86.1% |\n| Lymphocytes | 7.3% |\n| Neutrophils | 4.4% |\n| Myeloblasts | 1.5% |\n| Monocytes | 0.7% |\n\n**Cohort morphology (n = 118 monoblasts):** predominantly medium cells (79.7%) with abundant (100.0%), moderately basophilic (100.0%) cytoplasm and prominent cytoplasmic vacuolation (50.9%); nuclei show open chromatin (100.0%), irregular contours (100.0%), and prominent nucleoli (100.0%).\n\n**Morphologic interpretation:** Morphology favours FAB M5, specifically acute monoblastic leukemia, supported by a dominant monoblast population with open chromatin, irregular nuclear contours, prominent nucleoli, and abundant moderately basophilic cytoplasm. The cytoplasmic vacuolation is only borderline dominant at 50.85%, so it supports monocytic differentiation but should be interpreted as heterogeneous rather than uniform. The very small myeloblast component of 1.46% provides little morphologic support for a mixed myelomonocytic pattern.\n\n**Diagnostic flags:** blasts present; blast threshold met.\n\n**Impression:** Acute Myeloid Leukemia with monocytic differentiation (AML-M5 / acute monoblastic or monocytic leukemia, suspected).\n\nMonoblasts comprise 87.6% of WBCs with prominent nucleoli and abundant moderately basophilic cytoplasm, consistent with a monocytic-lineage acute leukemia.\n\n**Differential considerations:**\n- Acute myelomonocytic leukemia (AML-M4).\n- AML with KMT2A rearrangement (frequently monocytic).\n- Blastic plasmacytoid dendritic cell neoplasm (excluded by immunophenotyping).\n\n**Recommended workup:**\n- Flow cytometric immunophenotyping (CD33, CD64, CD11b, CD14, lysozyme; CD34 often negative in monoblastic AML).\n- Cytochemistry: non-specific esterase (NSE) positive, MPO often weak/negative.\n- Bone marrow aspirate and trephine biopsy.\n- Cytogenetics and FISH including KMT2A (11q23) rearrangements.\n- Molecular panel including NPM1, FLT3-ITD/TKD, and AML fusion screen.\n\n**QC:** 59 FOVs; 137/164 cells classifiable (16.5% artefact); cohort cell count = 118; global canvas stitching active.",
       "info": {
-        "Diagnosis": "AML",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "AML",
+        "n_images": 59,
+        "n_cells_total": 164,
+        "n_cells_identified_wbc": 137,
+        "cell_counts": {
+          "monoblast": 118,
+          "none": 27,
+          "lymphocyte": 10,
+          "neutrophil": 6,
+          "myeloblast": 2,
+          "monocyte": 1
+        },
+        "cell_percentages_all": {
+          "monoblast": 71.95,
+          "none": 16.46,
+          "lymphocyte": 6.1,
+          "neutrophil": 3.66,
+          "myeloblast": 1.22,
+          "monocyte": 0.61
+        },
+        "cell_percentages_clinical": {
+          "monoblast": 86.13,
+          "lymphocyte": 7.3,
+          "neutrophil": 4.38,
+          "myeloblast": 1.46,
+          "monocyte": 0.73
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 103,
+              "large": 51,
+              "small": 10
+            },
+            "n_informative_cells": 164,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 62.8,
+              "large": 31.1,
+              "small": 6.1
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "open": 120,
+              "code_2": 27,
+              "coarse": 17
+            },
+            "n_informative_cells": 164,
+            "n_na_cells": 0,
+            "percentages": {
+              "open": 73.17,
+              "code_2": 16.46,
+              "coarse": 10.37
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 127,
+              "cleaved_or_folded": 27,
+              "regular": 10
+            },
+            "n_informative_cells": 164,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 77.44,
+              "cleaved_or_folded": 16.46,
+              "regular": 6.1
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "prominent": 120,
+              "code_2": 27,
+              "inconspicuous": 17
+            },
+            "n_informative_cells": 164,
+            "n_na_cells": 0,
+            "percentages": {
+              "prominent": 73.17,
+              "code_2": 16.46,
+              "inconspicuous": 10.37
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 126,
+              "code_2": 27,
+              "scanty": 11
+            },
+            "n_informative_cells": 164,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 76.83,
+              "code_2": 16.46,
+              "scanty": 6.71
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "moderate": 127,
+              "code_2": 27,
+              "slight": 10
+            },
+            "n_informative_cells": 164,
+            "n_na_cells": 0,
+            "percentages": {
+              "moderate": 77.44,
+              "code_2": 16.46,
+              "slight": 6.1
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 76,
+              "prominent": 61,
+              "code_2": 27
+            },
+            "n_informative_cells": 164,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 46.34,
+              "prominent": 37.2,
+              "code_2": 16.46
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "AML",
+          "blast_pool_percentage_of_wbc": 87.59,
+          "dominant_cell_type": "monoblast",
+          "dominant_cell_pct": 86.13,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": true,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 79.66
+            },
+            "nuclear_chromatio": {
+              "dominant": "open",
+              "dominance_pct": 100.0
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 100.0
+            },
+            "nucleolus": {
+              "dominant": "prominent",
+              "dominance_pct": 100.0
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "moderate",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "prominent",
+              "dominance_pct": 50.85
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 164,
+            "n_identified_wbc": 137,
+            "n_artifacts": 27,
+            "n_fields_of_view": 59,
+            "n_cells_in_cohort": 118,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 21": {
@@ -137,10 +852,188 @@
         "images/21_5_3_400_CLL.png",      
         "images/21_9_8_400_CLL.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 62 fields of view, 206 of 253 annotated objects classified as informative WBCs (47 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Atypical lymphocytes | 92.2% |\n| Neutrophils | 5.8% |\n| Monocytes | 1.5% |\n| Lymphocytes | 0.5% |\n\n**Morphologic interpretation:** No specific FAB subtype is favored, as the cohort is not a blast population and shows mature lymphoid-type cytology. The atypical lymphocyte cohort is highly uniform, with medium size, coarse nuclear chromatin, irregular nuclei, inconspicuous nucleoli, abundant cytoplasm, slight basophilia, and absent cytoplasmic vacuoles. This pattern supports a mature lymphoid process but is not classic for CLL/SLL morphology, given the prominent irregular nuclear contours and abundant cytoplasm. Inconspicuous nucleoli argue against a prolymphocytic morphology.\n\n**Diagnostic flags:** atypical lymphocytes present.\n\n**Impression:** Chronic Lymphocytic Leukemia / Small Lymphocytic Lymphoma (CLL/SLL, suspected).\n\nThe smear is dominated by atypical mature lymphocytes (92.2% of informative WBCs) with coarse chromatin and inconspicuous nucleoli, and no significant blast population.\n\n**Differential considerations:**\n- Mantle cell lymphoma in leukemic phase (excluded by CD5+/CD23+/cyclin D1- profile).\n- Marginal zone lymphoma, leukemic.\n- Prolymphocytic leukemia (>55% prolymphocytes).\n- Reactive lymphocytosis (e.g. viral) — typically polyclonal.\n\n**Recommended workup:**\n- Flow cytometric immunophenotyping (CLL panel: CD5, CD19, CD20, CD23, CD79b, FMC7, kappa/lambda light chain restriction).\n- Matutes / CLL score calculation.\n- FISH panel: del(13q), del(11q), del(17p)/TP53, trisomy 12.\n- IGHV mutation status and TP53 sequencing (prognostic and predictive).\n- Beta-2 microglobulin and standard staging workup (Rai/Binet).\n\n**QC:** 62 FOVs; 206/253 cells classifiable (18.6% artefact); cohort cell count = 190; global canvas stitching active.",
       "info": {
-        "Diagnosis": "CLL",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "CLL",
+        "n_images": 62,
+        "n_cells_total": 253,
+        "n_cells_identified_wbc": 206,
+        "cell_counts": {
+          "atypical lymphocyte": 190,
+          "none": 47,
+          "neutrophil": 12,
+          "monocyte": 3,
+          "lymphocyte": 1
+        },
+        "cell_percentages_all": {
+          "atypical lymphocyte": 75.1,
+          "none": 18.58,
+          "neutrophil": 4.74,
+          "monocyte": 1.19,
+          "lymphocyte": 0.4
+        },
+        "cell_percentages_clinical": {
+          "atypical lymphocyte": 92.23,
+          "neutrophil": 5.83,
+          "monocyte": 1.46,
+          "lymphocyte": 0.49
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 205,
+              "large": 45,
+              "small": 2,
+              "code_3": 1
+            },
+            "n_informative_cells": 253,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 81.03,
+              "large": 17.79,
+              "small": 0.79,
+              "code_3": 0.4
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "coarse": 208,
+              "code_2": 45
+            },
+            "n_informative_cells": 253,
+            "n_na_cells": 0,
+            "percentages": {
+              "coarse": 82.21,
+              "code_2": 17.79
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 204,
+              "cleaved_or_folded": 45,
+              "regular": 4
+            },
+            "n_informative_cells": 253,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 80.63,
+              "cleaved_or_folded": 17.79,
+              "regular": 1.58
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "inconspicuous": 206,
+              "code_2": 45,
+              "prominent": 2
+            },
+            "n_informative_cells": 253,
+            "n_na_cells": 0,
+            "percentages": {
+              "inconspicuous": 81.42,
+              "code_2": 17.79,
+              "prominent": 0.79
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 205,
+              "code_2": 45,
+              "scanty": 3
+            },
+            "n_informative_cells": 253,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 81.03,
+              "code_2": 17.79,
+              "scanty": 1.19
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "slight": 190,
+              "code_2": 45,
+              "moderate": 18
+            },
+            "n_informative_cells": 253,
+            "n_na_cells": 0,
+            "percentages": {
+              "slight": 75.1,
+              "code_2": 17.79,
+              "moderate": 7.11
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 206,
+              "code_2": 45,
+              "prominent": 2
+            },
+            "n_informative_cells": 253,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 81.42,
+              "code_2": 17.79,
+              "prominent": 0.79
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "CLL",
+          "blast_pool_percentage_of_wbc": 0.0,
+          "dominant_cell_type": "atypical lymphocyte",
+          "dominant_cell_pct": 92.23,
+          "diagnostic_flags": {
+            "blasts_present": false,
+            "blast_threshold_met": false,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": true,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 99.47
+            },
+            "nuclear_chromatio": {
+              "dominant": "coarse",
+              "dominance_pct": 100.0
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 99.47
+            },
+            "nucleolus": {
+              "dominant": "inconspicuous",
+              "dominance_pct": 98.95
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "slight",
+              "dominance_pct": 98.42
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 253,
+            "n_identified_wbc": 206,
+            "n_artifacts": 47,
+            "n_fields_of_view": 62,
+            "n_cells_in_cohort": 190,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 23": {
@@ -166,10 +1059,189 @@
         "images/23_4_4_400_APML.png",
         "images/23_9_11_400_APML.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 59 fields of view, 177 of 207 annotated objects classified as informative WBCs (30 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Abnormal promyelocytes | 91.5% |\n| Neutrophils | 6.2% |\n| Myeloblasts | 1.1% |\n| Monocytes | 0.6% |\n| Lymphocytes | 0.6% |\n**Cohort morphology (n = 162 abnormal promyelocytes):** predominantly medium cells (98.8%) with abundant (100.0%), moderately basophilic (100.0%) cytoplasm and absent cytoplasmic vacuolation (100.0%); nuclei show open chromatin (99.4%), irregular contours (100.0%), and prominent nucleoli (82.7%).\n\n**Morphologic interpretation:** The blast population favours FAB AML-M3 because the smear is dominated by abnormal promyelocytes with uniformly irregular nuclear contours, open chromatin, abundant moderately basophilic cytoplasm, and absent vacuolation. Prominent nucleoli in 82.7% indicate an immature promyelocytic/blast-equivalent population rather than mature granulocytic forms. The morphology is not mixed and does not favour another specific FAB subtype.\n\n**Diagnostic flags:** blasts present; blast threshold met; abnormal promyelocytes present.\n\n**Impression:** Acute Promyelocytic Leukemia (APL / AML-M3, suspected).\n\nAbnormal promyelocytes dominate the smear (91.5% of WBCs) with a blast-equivalent burden of 92.7%, meeting criteria for acute leukemia.\n\n**Differential considerations:**\n- AML, not otherwise specified (less likely given promyelocyte morphology).\n\n**Recommended workup:**\n- URGENT: PML::RARA fusion testing (RT-PCR or FISH) — APL is a medical emergency requiring immediate ATRA initiation on clinical suspicion.\n- Flow cytometric immunophenotyping (typically CD33+, CD13+, CD117+/-, HLA-DR negative, CD34 negative).\n- Coagulation panel (PT/PTT, fibrinogen, D-dimer) to assess for DIC.\n- Bone marrow aspirate and biopsy for confirmation.\n- Cytogenetics for t(15;17) and screening for variant RARA translocations.\n\n**QC:** 59 FOVs; 177/207 cells classifiable (14.5% artefact); cohort cell count = 162; global canvas stitching active.",
       "info": {
-        "Diagnosis": "APML",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "APML",
+        "n_images": 59,
+        "n_cells_total": 207,
+        "n_cells_identified_wbc": 177,
+        "cell_counts": {
+          "abnormal promyelocyte": 162,
+          "none": 30,
+          "neutrophil": 11,
+          "myeloblast": 2,
+          "monocyte": 1,
+          "lymphocyte": 1
+        },
+        "cell_percentages_all": {
+          "abnormal promyelocyte": 78.26,
+          "none": 14.49,
+          "neutrophil": 5.31,
+          "myeloblast": 0.97,
+          "monocyte": 0.48,
+          "lymphocyte": 0.48
+        },
+        "cell_percentages_clinical": {
+          "abnormal promyelocyte": 91.53,
+          "neutrophil": 6.21,
+          "myeloblast": 1.13,
+          "monocyte": 0.56,
+          "lymphocyte": 0.56
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 174,
+              "large": 32,
+              "small": 1
+            },
+            "n_informative_cells": 207,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 84.06,
+              "large": 15.46,
+              "small": 0.48
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "open": 163,
+              "code_2": 30,
+              "coarse": 14
+            },
+            "n_informative_cells": 207,
+            "n_na_cells": 0,
+            "percentages": {
+              "open": 78.74,
+              "code_2": 14.49,
+              "coarse": 6.76
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 176,
+              "cleaved_or_folded": 30,
+              "regular": 1
+            },
+            "n_informative_cells": 207,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 85.02,
+              "cleaved_or_folded": 14.49,
+              "regular": 0.48
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "prominent": 136,
+              "inconspicuous": 41,
+              "code_2": 30
+            },
+            "n_informative_cells": 207,
+            "n_na_cells": 0,
+            "percentages": {
+              "prominent": 65.7,
+              "inconspicuous": 19.81,
+              "code_2": 14.49
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 176,
+              "code_2": 30,
+              "scanty": 1
+            },
+            "n_informative_cells": 207,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 85.02,
+              "code_2": 14.49,
+              "scanty": 0.48
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "moderate": 176,
+              "code_2": 30,
+              "slight": 1
+            },
+            "n_informative_cells": 207,
+            "n_na_cells": 0,
+            "percentages": {
+              "moderate": 85.02,
+              "code_2": 14.49,
+              "slight": 0.48
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 177,
+              "code_2": 30
+            },
+            "n_informative_cells": 207,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 85.51,
+              "code_2": 14.49
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "APML",
+          "blast_pool_percentage_of_wbc": 92.66,
+          "dominant_cell_type": "abnormal promyelocyte",
+          "dominant_cell_pct": 91.53,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": true,
+            "abnormal_promyelocytes_present": true,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 98.77
+            },
+            "nuclear_chromatio": {
+              "dominant": "open",
+              "dominance_pct": 99.38
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 100.0
+            },
+            "nucleolus": {
+              "dominant": "prominent",
+              "dominance_pct": 82.72
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "moderate",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 207,
+            "n_identified_wbc": 177,
+            "n_artifacts": 30,
+            "n_fields_of_view": 59,
+            "n_cells_in_cohort": 162,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 24": {
@@ -195,10 +1267,191 @@
         "images/24_24_38_400_APML.png",
         "images/24_4_4_400_APML.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 44 fields of view, 331 of 930 annotated objects classified as informative WBCs (599 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Myeloblasts | 64.0% |\n| Abnormal promyelocytes | 33.2% |\n| Neutrophils | 1.8% |\n| Monocytes | 0.6% |\n| Lymphocytes | 0.3% |\n\n**Cohort morphology (n = 212 myeloblasts):** predominantly medium cells (66.5%) with abundant (98.6%), moderately basophilic (99.5%) cytoplasm and absent cytoplasmic vacuolation (100.0%); nuclei show open chromatin (100.0%), irregular contours (100.0%), and prominent nucleoli (91.0%).\n\n**Morphologic interpretation:** The findings show a mixed myeloid pattern rather than a pure promyelocytic morphology, with a dominant myeloblast population and a substantial abnormal promyelocyte component. The blast cohort has open chromatin, irregular nuclear contours, prominent nucleoli, and abundant moderately basophilic cytoplasm, supporting immature myeloid differentiation but not providing specific morphologic features that definitively favor FAB M3 over other AML categories. No specific FAB subtype is favored on the blast-cohort morphology alone; the presence of abnormal promyelocytes keeps AML-M3/APL in consideration but is not morphologically conclusive here. The template impression is therefore stronger than the documented blast-cohort morphology supports.\n\n**Diagnostic flags:** blasts present; blast threshold met; abnormal promyelocytes present.\n\n**Impression:** Acute Promyelocytic Leukemia (APL / AML-M3, suspected).\n\nAbnormal promyelocytes dominate the smear (64.0% of WBCs) with a blast-equivalent burden of 97.3%, meeting criteria for acute leukemia.\n\n**Differential considerations:**\n- AML, not otherwise specified (less likely given promyelocyte morphology).\n\n**Recommended workup:**\n- URGENT: PML::RARA fusion testing (RT-PCR or FISH) — APL is a medical emergency requiring immediate ATRA initiation on clinical suspicion.\n- Flow cytometric immunophenotyping (typically CD33+, CD13+, CD117+/-, HLA-DR negative, CD34 negative).\n- Coagulation panel (PT/PTT, fibrinogen, D-dimer) to assess for DIC.\n- Bone marrow aspirate and biopsy for confirmation.\n- Cytogenetics for t(15;17) and screening for variant RARA translocations.\n\n**QC:** 44 FOVs; 331/930 cells classifiable (64.4% artefact); cohort cell count = 212; global canvas stitching active.",
       "info": {
-        "Diagnosis": "APML",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "APML",
+        "n_images": 44,
+        "n_cells_total": 930,
+        "n_cells_identified_wbc": 331,
+        "cell_counts": {
+          "none": 599,
+          "myeloblast": 212,
+          "abnormal promyelocyte": 110,
+          "neutrophil": 6,
+          "monocyte": 2,
+          "lymphocyte": 1
+        },
+        "cell_percentages_all": {
+          "none": 64.41,
+          "myeloblast": 22.8,
+          "abnormal promyelocyte": 11.83,
+          "neutrophil": 0.65,
+          "monocyte": 0.22,
+          "lymphocyte": 0.11
+        },
+        "cell_percentages_clinical": {
+          "myeloblast": 64.05,
+          "abnormal promyelocyte": 33.23,
+          "neutrophil": 1.81,
+          "monocyte": 0.6,
+          "lymphocyte": 0.3
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "large": 604,
+              "medium": 209,
+              "small": 116,
+              "code_3": 1
+            },
+            "n_informative_cells": 930,
+            "n_na_cells": 0,
+            "percentages": {
+              "large": 64.95,
+              "medium": 22.47,
+              "small": 12.47,
+              "code_3": 0.11
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "code_2": 599,
+              "open": 322,
+              "coarse": 9
+            },
+            "n_informative_cells": 930,
+            "n_na_cells": 0,
+            "percentages": {
+              "code_2": 64.41,
+              "open": 34.62,
+              "coarse": 0.97
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "cleaved_or_folded": 599,
+              "irregular": 330,
+              "regular": 1
+            },
+            "n_informative_cells": 930,
+            "n_na_cells": 0,
+            "percentages": {
+              "cleaved_or_folded": 64.41,
+              "irregular": 35.48,
+              "regular": 0.11
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "code_2": 599,
+              "prominent": 289,
+              "inconspicuous": 42
+            },
+            "n_informative_cells": 930,
+            "n_na_cells": 0,
+            "percentages": {
+              "code_2": 64.41,
+              "prominent": 31.08,
+              "inconspicuous": 4.52
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "code_2": 599,
+              "abundant": 327,
+              "scanty": 4
+            },
+            "n_informative_cells": 930,
+            "n_na_cells": 0,
+            "percentages": {
+              "code_2": 64.41,
+              "abundant": 35.16,
+              "scanty": 0.43
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "code_2": 599,
+              "moderate": 329,
+              "slight": 2
+            },
+            "n_informative_cells": 930,
+            "n_na_cells": 0,
+            "percentages": {
+              "code_2": 64.41,
+              "moderate": 35.38,
+              "slight": 0.22
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "code_2": 599,
+              "absent": 331
+            },
+            "n_informative_cells": 930,
+            "n_na_cells": 0,
+            "percentages": {
+              "code_2": 64.41,
+              "absent": 35.59
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "APML",
+          "blast_pool_percentage_of_wbc": 97.28,
+          "dominant_cell_type": "myeloblast",
+          "dominant_cell_pct": 64.05,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": true,
+            "abnormal_promyelocytes_present": true,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 66.51
+            },
+            "nuclear_chromatio": {
+              "dominant": "open",
+              "dominance_pct": 100.0
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 100.0
+            },
+            "nucleolus": {
+              "dominant": "prominent",
+              "dominance_pct": 91.04
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 98.58
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "moderate",
+              "dominance_pct": 99.53
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 930,
+            "n_identified_wbc": 331,
+            "n_artifacts": 599,
+            "n_fields_of_view": 44,
+            "n_cells_in_cohort": 212,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 27": {
@@ -224,10 +1477,198 @@
         "images/27_5_5_400_CML.png",
         "images/27_9_9_400_CML.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 59 fields of view, 308 of 367 annotated objects classified as informative WBCs (59 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Neutrophils | 62.3% |\n| Myelocytes | 14.3% |\n| Metamyelocytes | 10.1% |\n| Myeloblasts | 6.2% |\n| Monocytes | 3.2% |\n| Basophils | 2.3% |\n| Lymphocytes | 1.0% |\n| Eosinophils | 0.7% |\n\n**Morphologic interpretation:** The blast population is composed predominantly of medium-sized cells with open nuclear chromatin, irregular nuclear contours, prominent nucleoli, abundant cytoplasm, and moderate cytoplasmic basophilia, supporting immature myeloid morphology. No specific FAB subtype is favored, as the described features do not show subtype-defining differentiation patterns and no Auer rods or distinctive cytoplasmic features are documented. The broader smear pattern of left-shifted granulopoiesis with myelocytes, metamyelocytes, basophils, and 6.17% myeloblasts is morphologically concordant with a chronic myeloid proliferative process rather than an acute leukemia pattern.\n\n**Diagnostic flags:** blasts present; basophilia present; left shifted myeloid.\n\n**Impression:** Chronic Myeloid Leukemia (CML), chronic phase (suspected).\n\nLeft-shifted granulocytic series with the full spectrum of maturation (myelocytes, metamyelocytes, neutrophils), and a blast burden of 6.2% (below the 20% threshold for blast phase) supports a chronic-phase CML profile, even when basophilia is borderline.\n\n**Differential considerations:**\n- Leukemoid reaction (less likely with persistent left shift).\n- Other MPN (PV, ET, primary myelofibrosis).\n- Atypical CML, BCR::ABL1 negative.\n- CML in accelerated or blast phase (excluded by blast count and morphology).\n\n**Recommended workup:**\n- BCR::ABL1 testing by RT-PCR (qualitative and quantitative) — diagnostic.\n- FISH for t(9;22) / Philadelphia chromosome.\n- Bone marrow aspirate and biopsy with cytogenetics.\n- Baseline transcript level for IS-standardized monitoring during TKI therapy.\n- Sokal / EUTOS / ELTS risk score calculation at diagnosis.\n\n**QC:** 59 FOVs; 308/367 cells classifiable (16.1% artefact); cohort cell count = 19; global canvas stitching active.",
       "info": {
-        "Diagnosis": "CML",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "CML",
+        "n_images": 59,
+        "n_cells_total": 367,
+        "n_cells_identified_wbc": 308,
+        "cell_counts": {
+          "neutrophil": 192,
+          "none": 59,
+          "myelocyte": 44,
+          "metamyelocyte": 31,
+          "myeloblast": 19,
+          "monocyte": 10,
+          "basophil": 7,
+          "lymphocyte": 3,
+          "eosinophil": 2
+        },
+        "cell_percentages_all": {
+          "neutrophil": 52.32,
+          "none": 16.08,
+          "myelocyte": 11.99,
+          "metamyelocyte": 8.45,
+          "myeloblast": 5.18,
+          "monocyte": 2.72,
+          "basophil": 1.91,
+          "lymphocyte": 0.82,
+          "eosinophil": 0.54
+        },
+        "cell_percentages_clinical": {
+          "neutrophil": 62.34,
+          "myelocyte": 14.29,
+          "metamyelocyte": 10.06,
+          "myeloblast": 6.17,
+          "monocyte": 3.25,
+          "basophil": 2.27,
+          "lymphocyte": 0.97,
+          "eosinophil": 0.65
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 266,
+              "large": 75,
+              "small": 26
+            },
+            "n_informative_cells": 367,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 72.48,
+              "large": 20.44,
+              "small": 7.08
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "coarse": 289,
+              "code_2": 59,
+              "open": 19
+            },
+            "n_informative_cells": 367,
+            "n_na_cells": 0,
+            "percentages": {
+              "coarse": 78.75,
+              "code_2": 16.08,
+              "open": 5.18
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 302,
+              "cleaved_or_folded": 59,
+              "regular": 6
+            },
+            "n_informative_cells": 367,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 82.29,
+              "cleaved_or_folded": 16.08,
+              "regular": 1.63
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "inconspicuous": 276,
+              "code_2": 59,
+              "prominent": 32
+            },
+            "n_informative_cells": 367,
+            "n_na_cells": 0,
+            "percentages": {
+              "inconspicuous": 75.2,
+              "code_2": 16.08,
+              "prominent": 8.72
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 295,
+              "code_2": 59,
+              "scanty": 13
+            },
+            "n_informative_cells": 367,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 80.38,
+              "code_2": 16.08,
+              "scanty": 3.54
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "moderate": 299,
+              "code_2": 59,
+              "slight": 9
+            },
+            "n_informative_cells": 367,
+            "n_na_cells": 0,
+            "percentages": {
+              "moderate": 81.47,
+              "code_2": 16.08,
+              "slight": 2.45
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 308,
+              "code_2": 59
+            },
+            "n_informative_cells": 367,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 83.92,
+              "code_2": 16.08
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "CML",
+          "blast_pool_percentage_of_wbc": 6.17,
+          "dominant_cell_type": "neutrophil",
+          "dominant_cell_pct": 62.34,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": false,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": true,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": true,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 84.21
+            },
+            "nuclear_chromatio": {
+              "dominant": "open",
+              "dominance_pct": 100.0
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 100.0
+            },
+            "nucleolus": {
+              "dominant": "prominent",
+              "dominance_pct": 94.74
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 73.68
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "moderate",
+              "dominance_pct": 94.74
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 367,
+            "n_identified_wbc": 308,
+            "n_artifacts": 59,
+            "n_fields_of_view": 59,
+            "n_cells_in_cohort": 19,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 28": {
@@ -254,10 +1695,197 @@
         "images/28_3_2_400_CML.png",
         "images/28_8_8_400_CML.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 59 fields of view, 271 of 299 annotated objects classified as informative WBCs (28 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Neutrophils | 59.0% |\n| Myelocytes | 17.0% |\n| Metamyelocytes | 7.8% |\n| Myeloblasts | 7.0% |\n| Monocytes | 5.2% |\n| Lymphocytes | 3.0% |\n| Eosinophils | 1.1% |\n\n**Morphologic interpretation:** The blast cohort shows a coherent immature myeloid pattern with open nuclear chromatin, irregular nuclei, prominent nucleoli, and moderately basophilic cytoplasm. No specific FAB subtype is favored by the blast morphology alone, as the described features do not define a distinctive FAB category. The absence of cytoplasmic vacuoles argues against a vacuolated blast pattern, and the morphology is not internally inconsistent with the reported left-shifted myeloid process.\n\n**Diagnostic flags:** blasts present; left shifted myeloid.\n\n**Impression:** Chronic Myeloid Leukemia (CML), chronic phase (suspected).\n\nLeft-shifted granulocytic series with the full spectrum of maturation (myelocytes, metamyelocytes, neutrophils), and a blast burden of 7.0% (below the 20% threshold for blast phase) supports a chronic-phase CML profile, even when basophilia is borderline.\n\n**Differential considerations:**\n- Leukemoid reaction (less likely with persistent left shift).\n- Other MPN (PV, ET, primary myelofibrosis).\n- Atypical CML, BCR::ABL1 negative.\n- CML in accelerated or blast phase (excluded by blast count and morphology).\n\n**Recommended workup:**\n- BCR::ABL1 testing by RT-PCR (qualitative and quantitative) — diagnostic.\n- FISH for t(9;22) / Philadelphia chromosome.\n- Bone marrow aspirate and biopsy with cytogenetics.\n- Baseline transcript level for IS-standardized monitoring during TKI therapy.\n- Sokal / EUTOS / ELTS risk score calculation at diagnosis.\n\n**QC:** 59 FOVs; 271/299 cells classifiable (9.4% artefact); cohort cell count = 19; global canvas stitching active.",
       "info": {
-        "Diagnosis": "CML",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "CML",
+        "n_images": 59,
+        "n_cells_total": 299,
+        "n_cells_identified_wbc": 271,
+        "cell_counts": {
+          "neutrophil": 160,
+          "myelocyte": 46,
+          "none": 28,
+          "metamyelocyte": 21,
+          "myeloblast": 19,
+          "monocyte": 14,
+          "lymphocyte": 8,
+          "eosinophil": 3
+        },
+        "cell_percentages_all": {
+          "neutrophil": 53.51,
+          "myelocyte": 15.38,
+          "none": 9.36,
+          "metamyelocyte": 7.02,
+          "myeloblast": 6.35,
+          "monocyte": 4.68,
+          "lymphocyte": 2.68,
+          "eosinophil": 1.0
+        },
+        "cell_percentages_clinical": {
+          "neutrophil": 59.04,
+          "myelocyte": 16.97,
+          "metamyelocyte": 7.75,
+          "myeloblast": 7.01,
+          "monocyte": 5.17,
+          "lymphocyte": 2.95,
+          "eosinophil": 1.11
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "medium": 243,
+              "large": 45,
+              "small": 11
+            },
+            "n_informative_cells": 299,
+            "n_na_cells": 0,
+            "percentages": {
+              "medium": 81.27,
+              "large": 15.05,
+              "small": 3.68
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "coarse": 252,
+              "code_2": 28,
+              "open": 19
+            },
+            "n_informative_cells": 299,
+            "n_na_cells": 0,
+            "percentages": {
+              "coarse": 84.28,
+              "code_2": 9.36,
+              "open": 6.35
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 262,
+              "cleaved_or_folded": 28,
+              "regular": 9
+            },
+            "n_informative_cells": 299,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 87.63,
+              "cleaved_or_folded": 9.36,
+              "regular": 3.01
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "inconspicuous": 253,
+              "code_2": 28,
+              "prominent": 18
+            },
+            "n_informative_cells": 299,
+            "n_na_cells": 0,
+            "percentages": {
+              "inconspicuous": 84.62,
+              "code_2": 9.36,
+              "prominent": 6.02
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "abundant": 258,
+              "code_2": 28,
+              "scanty": 13
+            },
+            "n_informative_cells": 299,
+            "n_na_cells": 0,
+            "percentages": {
+              "abundant": 86.29,
+              "code_2": 9.36,
+              "scanty": 4.35
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "moderate": 262,
+              "code_2": 28,
+              "slight": 9
+            },
+            "n_informative_cells": 299,
+            "n_na_cells": 0,
+            "percentages": {
+              "moderate": 87.63,
+              "code_2": 9.36,
+              "slight": 3.01
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 266,
+              "code_2": 28,
+              "prominent": 5
+            },
+            "n_informative_cells": 299,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 88.96,
+              "code_2": 9.36,
+              "prominent": 1.67
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "CML",
+          "blast_pool_percentage_of_wbc": 7.01,
+          "dominant_cell_type": "neutrophil",
+          "dominant_cell_pct": 59.04,
+          "diagnostic_flags": {
+            "blasts_present": true,
+            "blast_threshold_met": false,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": false,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": true,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 78.95
+            },
+            "nuclear_chromatio": {
+              "dominant": "open",
+              "dominance_pct": 100.0
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 94.74
+            },
+            "nucleolus": {
+              "dominant": "prominent",
+              "dominance_pct": 73.68
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 73.68
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "moderate",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 299,
+            "n_identified_wbc": 271,
+            "n_artifacts": 28,
+            "n_fields_of_view": 59,
+            "n_cells_in_cohort": 19,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     },
     "Patient 32": {
@@ -283,10 +1911,179 @@
         "images/32_5_65_400_CLL.png",
         "images/32_9_59_400_CLL.png"
       ],
-      "text": "Text for Group 2.",
+      "text": "**Specimen:** Peripheral blood smear, 48 fields of view, 221 of 405 annotated objects classified as informative WBCs (184 artefacts excluded).\n\n**Differential (clinical denominator):**\n\n| Cell type | % of informative WBCs |\n|---|---|\n| Atypical lymphocytes | 98.2% |\n| Neutrophils | 0.9% |\n| Eosinophils | 0.9% |\n\n**Morphologic interpretation:** The cohort shows a mature lymphoid cytologic pattern with coarse nuclear chromatin, inconspicuous nucleoli, slight basophilia, and absent cytoplasmic vacuoles, supporting a chronic lymphoproliferative morphology rather than an acute blast process. No specific FAB subtype is favored, as the analyzed cohort is not morphologically a blast population and lacks features supporting an acute leukemia FAB category. Nuclear contour abnormality is prominent, with irregular nuclei dominant at 99.08%, making the morphology less purely small round lymphocyte-like despite the mature chromatin pattern. Cytoplasmic abundance is only borderline dominant at 57.6%, so the cytoplasmic profile is not strongly one-sided.\n\n**Diagnostic flags:** atypical lymphocytes present.\n\n**Impression:** Chronic Lymphocytic Leukemia / Small Lymphocytic Lymphoma (CLL/SLL, suspected).\n\nThe smear is dominated by atypical mature lymphocytes (98.2% of informative WBCs) with coarse chromatin and inconspicuous nucleoli, and no significant blast population.\n\n**Differential considerations:**\n- Mantle cell lymphoma in leukemic phase (excluded by CD5+/CD23+/cyclin D1- profile).\n- Marginal zone lymphoma, leukemic.\n- Prolymphocytic leukemia (>55% prolymphocytes).\n- Reactive lymphocytosis (e.g. viral) — typically polyclonal.\n\n**Recommended workup:**\n- Flow cytometric immunophenotyping (CLL panel: CD5, CD19, CD20, CD23, CD79b, FMC7, kappa/lambda light chain restriction).\n- Matutes / CLL score calculation.\n- FISH panel: del(13q), del(11q), del(17p)/TP53, trisomy 12.\n- IGHV mutation status and TP53 sequencing (prognostic and predictive).\n- Beta-2 microglobulin and standard staging workup (Rai/Binet).\n\n**QC:** 48 FOVs; 221/405 cells classifiable (45.4% artefact); cohort cell count = 217; global canvas stitching active.",
       "info": {
-        "Diagnosis": "CLL",
-        "Magnification": "40X"
+        "metadata_filename_diagnosis": "CLL",
+        "n_images": 48,
+        "n_cells_total": 405,
+        "n_cells_identified_wbc": 221,
+        "cell_counts": {
+          "atypical lymphocyte": 217,
+          "none": 184,
+          "neutrophil": 2,
+          "eosinophil": 2
+        },
+        "cell_percentages_all": {
+          "atypical lymphocyte": 53.58,
+          "none": 45.43,
+          "neutrophil": 0.49,
+          "eosinophil": 0.49
+        },
+        "cell_percentages_clinical": {
+          "atypical lymphocyte": 98.19,
+          "neutrophil": 0.9,
+          "eosinophil": 0.9
+        },
+        "attributes": {
+          "cell_size": {
+            "counts": {
+              "large": 184,
+              "medium": 180,
+              "small": 41
+            },
+            "n_informative_cells": 405,
+            "n_na_cells": 0,
+            "percentages": {
+              "large": 45.43,
+              "medium": 44.44,
+              "small": 10.12
+            }
+          },
+          "nuclear_chromatio": {
+            "counts": {
+              "coarse": 221,
+              "code_2": 184
+            },
+            "n_informative_cells": 405,
+            "n_na_cells": 0,
+            "percentages": {
+              "coarse": 54.57,
+              "code_2": 45.43
+            }
+          },
+          "nuclear_shape": {
+            "counts": {
+              "irregular": 219,
+              "cleaved_or_folded": 184,
+              "regular": 2
+            },
+            "n_informative_cells": 405,
+            "n_na_cells": 0,
+            "percentages": {
+              "irregular": 54.07,
+              "cleaved_or_folded": 45.43,
+              "regular": 0.49
+            }
+          },
+          "nucleolus": {
+            "counts": {
+              "inconspicuous": 221,
+              "code_2": 184
+            },
+            "n_informative_cells": 405,
+            "n_na_cells": 0,
+            "percentages": {
+              "inconspicuous": 54.57,
+              "code_2": 45.43
+            }
+          },
+          "cytoplasm": {
+            "counts": {
+              "code_2": 184,
+              "abundant": 129,
+              "scanty": 92
+            },
+            "n_informative_cells": 405,
+            "n_na_cells": 0,
+            "percentages": {
+              "code_2": 45.43,
+              "abundant": 31.85,
+              "scanty": 22.72
+            }
+          },
+          "cytoplasmic_basophilia": {
+            "counts": {
+              "slight": 217,
+              "code_2": 184,
+              "moderate": 4
+            },
+            "n_informative_cells": 405,
+            "n_na_cells": 0,
+            "percentages": {
+              "slight": 53.58,
+              "code_2": 45.43,
+              "moderate": 0.99
+            }
+          },
+          "cytoplasmic_vacuoles": {
+            "counts": {
+              "absent": 221,
+              "code_2": 184
+            },
+            "n_informative_cells": 405,
+            "n_na_cells": 0,
+            "percentages": {
+              "absent": 54.57,
+              "code_2": 45.43
+            }
+          }
+        },
+        "report_ready": {
+          "metadata_filename_diagnosis": "CLL",
+          "blast_pool_percentage_of_wbc": 0.0,
+          "dominant_cell_type": "atypical lymphocyte",
+          "dominant_cell_pct": 98.19,
+          "diagnostic_flags": {
+            "blasts_present": false,
+            "blast_threshold_met": false,
+            "abnormal_promyelocytes_present": false,
+            "atypical_lymphocytes_present": true,
+            "basophilia_present": false,
+            "eosinophilia_present": false,
+            "left_shifted_myeloid": false,
+            "monocytosis_present": false
+          },
+          "blast_morphology": {
+            "cell_size": {
+              "dominant": "medium",
+              "dominance_pct": 81.11
+            },
+            "nuclear_chromatio": {
+              "dominant": "coarse",
+              "dominance_pct": 100.0
+            },
+            "nuclear_shape": {
+              "dominant": "irregular",
+              "dominance_pct": 99.08
+            },
+            "nucleolus": {
+              "dominant": "inconspicuous",
+              "dominance_pct": 100.0
+            },
+            "cytoplasm": {
+              "dominant": "abundant",
+              "dominance_pct": 57.6
+            },
+            "cytoplasmic_basophilia": {
+              "dominant": "slight",
+              "dominance_pct": 100.0
+            },
+            "cytoplasmic_vacuoles": {
+              "dominant": "absent",
+              "dominance_pct": 100.0
+            }
+          },
+          "qc": {
+            "n_annotated_cells": 405,
+            "n_identified_wbc": 221,
+            "n_artifacts": 184,
+            "n_fields_of_view": 48,
+            "n_cells_in_cohort": 217,
+            "low_cell_count_warning": false,
+            "sparse_annotation_skew_warning": false,
+            "global_canvas_stitching_active": true
+          }
+        }
       }
     }
   }

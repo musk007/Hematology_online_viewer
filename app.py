@@ -103,10 +103,40 @@ with left:
 with right:
 
     st.subheader("Description")
-    st.write(group["text"])
+    st.markdown(group["text"])
 
     st.subheader("Information")
-    st.json(group["info"])
+    info = group["info"]
+
+    st.subheader("Summary")
+    st.write(f"**Diagnosis:** {info['metadata_filename_diagnosis']}")
+    st.write(f"**Number of images:** {info['n_images']}")
+    st.write(f"**Total cells:** {info['n_cells_total']}")
+    st.write(f"**Identified WBCs:** {info['n_cells_identified_wbc']}")
+
+    with st.expander("Cell counts"):
+        st.json(info["cell_counts"])
+
+    with st.expander("Cell percentages - all cells"):
+        st.json(info["cell_percentages_all"])
+
+    with st.expander("Cell percentages - clinical"):
+        st.json(info["cell_percentages_clinical"])
+
+    with st.expander("Attributes"):
+        st.json(info["attributes"])
+
+    with st.expander("Report-ready summary"):
+        st.json(info["report_ready"])
+
+    with st.expander("Diagnostic flags"):
+        st.json(info["report_ready"]["diagnostic_flags"])
+
+    with st.expander("Blast morphology"):
+        st.json(info["report_ready"]["blast_morphology"])
+
+    with st.expander("QC"):
+        st.json(info["report_ready"]["qc"])
 
     st.subheader("Feedback")
 
