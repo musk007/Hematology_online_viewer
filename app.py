@@ -83,9 +83,14 @@ with left:
 
             for idx, img in enumerate(group["images"]):
                 with cols[idx % 5]:
+                    caption = f"Image {idx+1}"
+
+                    if img == st.session_state.selected_image:
+                        caption = f"✅ Image {idx+1}"
+
                     st.image(
                         img,
-                        caption=f"Image {idx+1}",
+                        caption=caption,
                         use_container_width=True
                     )
 
