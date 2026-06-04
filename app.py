@@ -54,7 +54,7 @@ elif st.session_state.current_group != group_name:
 st.title("Leukemia Image-Report Viewer")
 
 # Layout
-left, right = st.columns([3, 1])
+left, right = st.columns([1.5, 2])
 
 # -------------------------
 # IMAGE AREA
