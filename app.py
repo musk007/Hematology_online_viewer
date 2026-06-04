@@ -98,8 +98,12 @@ with right:
 
     reviewer = st.text_input("Reviewer name")
 
+    if "feedback_text" not in st.session_state:
+        st.session_state.feedback_text = ""
+
     feedback = st.text_area(
-        "Enter your feedback",
+        "Enter your feedback, or enter 'No feedback' if you don't have any",
+        key="feedback_text",
         height=200
     )
 
