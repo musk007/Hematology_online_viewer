@@ -51,7 +51,16 @@ elif st.session_state.current_group != group_name:
     st.session_state.current_group = group_name
     st.session_state.feedback_text = ""
 
-st.title("Leukemia Image-Report Viewer")
+header_left, header_right = st.columns([4, 1])
+
+with header_left:
+    st.title("Leukemia Image-Report Viewer")
+
+with header_right:
+    st.image(
+        "images/MBZUAI_logo.jpg",
+        width=150
+    )
 
 # Layout
 left, right = st.columns([2, 2])
