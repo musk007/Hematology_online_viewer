@@ -38,7 +38,7 @@ spreadsheet = client.open("Hematology_feedback")
 worksheet = spreadsheet.sheet1
 
 # Select patient/group
-group_name = st.sidebar.selectbox(
+group_name = st.selectbox(
     "Select Patient",
     list(data.keys())
 )
