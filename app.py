@@ -44,6 +44,12 @@ group_name = st.sidebar.selectbox(
 )
 
 group = data[group_name]
+if "current_group" not in st.session_state:
+    st.session_state.current_group = group_name
+
+elif st.session_state.current_group != group_name:
+    st.session_state.current_group = group_name
+    st.session_state.feedback_text = ""
 
 st.title("Leukemia Image-Report Viewer")
 
