@@ -3,6 +3,11 @@ import json
 import pandas as pd
 import os
 from datetime import datetime
+import gspread
+from google.oauth2.service_account import Credentials
+
+
+
 
 st.set_page_config(
     page_title="Online Viewer",
@@ -12,6 +17,22 @@ st.set_page_config(
 # Load data
 with open("data.json", "r") as f:
     data = json.load(f)
+
+scopes = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive"
+]
+
+creds = Credentials.from_service_account_file(
+    "credentials.json",
+    scopes=scopes
+)
+
+client = gspread.authorize(creds)
+
+spreadsheet = client.open("Hematology_feedback")
+
+worksheet = spreadsheet.sheet1
 
 # Select patient/group
 group_name = st.sidebar.selectbox(
@@ -83,11 +104,10 @@ with right:
             "timestamp": str(datetime.now())
         }
 
-        pd.DataFrame([row]).to_csv(
-            "feedback.csv",
-            mode="a",
-            header=not os.path.exists(f"{group_name}.csv"),
-            index=False
-        )
-        st.write(os.path.abspath(f"{group_name}.csv"))
+        worksheet.append_row([
+            str(datetime.now()),
+            group_name,
+            feedback
+        ])
+
         st.success("Feedback submitted.")
