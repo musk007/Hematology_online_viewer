@@ -1,6 +1,5 @@
 import streamlit as st
 import json
-import pandas as pd
 import os
 from datetime import datetime
 import gspread
@@ -60,7 +59,11 @@ with left:
     if len(group["images"]) > 0:
 
         # Selected image
-        if "selected_image" not in st.session_state:
+        if (
+            "selected_group" not in st.session_state
+            or st.session_state.selected_group != group_name
+        ):
+            st.session_state.selected_group = group_name
             st.session_state.selected_image = group["images"][0]
 
         zoom = st.slider("Zoom", 50, 200, 50, step=10)
@@ -73,15 +76,21 @@ with left:
         st.markdown("---")
 
         # Thumbnail grid
-        cols = st.columns(4)
+        st.markdown("### Image thumbnails")
 
-        for idx, img in enumerate(group["images"]):
-            with cols[idx % 4]:
-                if st.button(
-                    f"Image {idx+1}",
-                    key=f"img_{idx}"
-                ):
-                    st.session_state.selected_image = img
+        with st.container(height=500):
+            cols = st.columns(5)
+
+            for idx, img in enumerate(group["images"]):
+                with cols[idx % 5]:
+                    st.image(
+                        img,
+                        caption=f"Image {idx+1}",
+                        use_container_width=True
+                    )
+
+                    if st.button("Select", key=f"select_{group_name}_{idx}"):
+                        st.session_state.selected_image = img
 
 # -------------------------
 # RIGHT PANEL
@@ -131,3 +140,5 @@ with right:
             ])
 
             st.success(f"Feedback submitted for {group_name}.")
+            st.session_state.feedback_text = ""
+            st.rerun()
