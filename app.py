@@ -24,7 +24,7 @@ scopes = [
 ]
 
 creds = Credentials.from_service_account_file(
-    "credentials.json",
+    st.secrets["gcp_service_account"],
     scopes=scopes
 )
 
