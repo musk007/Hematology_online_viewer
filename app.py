@@ -85,7 +85,7 @@ with left:
 
         st.image(
             st.session_state.selected_image,
-            width=int(700 * zoom / 100)
+            width=int(500 * zoom / 100)
         )
 
         st.markdown("---")
@@ -116,7 +116,14 @@ with left:
 # RIGHT PANEL
 # -------------------------
 with right:
-
+    if "bundle" in group:
+        with open(group["bundle"], "rb") as f:
+            st.download_button(
+                label="Download patient image bundle",
+                data=f,
+                file_name=f"{group_name}_images.zip",
+                mime="application/zip"
+            )
     
 
     # st.subheader("Information")
