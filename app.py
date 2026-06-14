@@ -117,13 +117,18 @@ with left:
 # -------------------------
 with right:
     if "bundle" in group:
-        with open(group["bundle"], "rb") as f:
-            st.download_button(
-                label="Download patient image bundle",
-                data=f,
-                file_name=f"{group_name}_images.zip",
-                mime="application/zip"
-            )
+        bundle_path = group["bundle"]
+
+        if os.path.exists(bundle_path):
+            with open(bundle_path, "rb") as f:
+                st.download_button(
+                    label="Download patient image bundle",
+                    data=f,
+                    file_name=f"{group_name}_images.zip",
+                    mime="application/zip"
+                )
+        else:
+            st.warning(f"Image bundle not found: {bundle_path}")
     
 
     # st.subheader("Information")
